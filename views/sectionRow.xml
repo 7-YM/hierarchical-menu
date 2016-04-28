@@ -1,0 +1,8 @@
+
+<Alloy>
+  <View id="sectionRow">
+    <ImageView id="icon"></ImageView>
+    <Label id="name">BOOKS</Label>
+    <Label id="itemValue">24</Label>
+  </View>
+</Alloy>

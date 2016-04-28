@@ -1,0 +1,31 @@
+"#sectionRow": {
+	top: '0',
+	left: '4',
+	right: '4',
+	height: '30'
+}
+	"#icon": {
+		left: '0',
+		width: '16',
+		height: '16',
+		image: '/images/icon_expand.png'
+	}
+	"#name": { 
+		backgroundColor: '#BFE5E6',
+		top: '0',
+		left: '20',
+		right: '67',
+		height: 30,
+		color: '#58585A',
+		font: { fontSize: '12dp', fontFamily: "Helvetica-Light" },
+	}
+	"#itemValue": { 
+		backgroundColor: '#BFE5E6',
+		top: '0',
+		right: '0',
+		width: '60',
+		height: 30,
+		color: '#58585A',
+		font: { fontSize: '12dp', fontFamily: "Helvetica-Bold" },
+		textAlign: 'center'
+	}

@@ -1,0 +1,11 @@
+
+<Alloy>
+  <View id="menu">
+    <View class="header">
+      <Label id="lblItemValue">Value</Label>
+    </View>
+    <ScrollView class="scrollWrapper">
+      <View id="wrapper"></View>
+    </ScrollView>
+  </View>
+</Alloy>

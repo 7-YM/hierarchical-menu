@@ -1,0 +1,13 @@
+{
+	"id": "com.sevenym.widget.hierarchical-menu",
+	"name": "Hierarchy Menu",
+	"description" : "Custom Hierarchy Menu",
+	"author": "Muhammad Usama",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2016",
+	"license":"Public Domain",
+	"min-alloy-version": "1.3.1",
+	"min-titanium-version":"3.2.1",
+	"tags":"",
+	"platforms":"android,ios,mobileweb"
+}
