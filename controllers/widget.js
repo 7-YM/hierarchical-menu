@@ -248,35 +248,8 @@ function createRecursiveMenu(nodeWrapper, offset, items, depth) {
 				}
 			})
 
-			// Open Menu
-			if(node.height == 30 || node.isLeafNode) {
-
-				// Switch Leaf Node Selection
-				if(node.isLeafNode) {
-
-					// Check Previously Selected Leaf Node
-					if(currentLeafNode != null) {
-
-						// De-Select Previous Leaf Node
-						currentLeafNode.name.backgroundColor = '#BFE5E6';
-						if(enableItemValue) currentLeafNode.itemValue.backgroundColor = '#BFE5E6';
-						currentLeafNode.icon.image = '/images/icon_expand.png';
-						currentLeafNode.height = 30;
-					}
-
-					// Save Current Leaf Node
-					currentLeafNode = node;
-
-				}
-
-				// Select and Open Menu
-				node.name.backgroundColor = '#FFF56C';
-				if(enableItemValue) node.itemValue.backgroundColor = '#FFF56C';
-				node.icon.image = '/images/icon_collapse.png';
-				node.height = Ti.UI.SIZE;
-
-			// Close Leaf Node
-			} else if(currentLeafNode != null) {
+			// Close Leaf Node IFF Selected
+			if(currentLeafNode != null) {
 
 				// De-Select Previous Leaf Node
 				currentLeafNode.name.backgroundColor = '#BFE5E6';
@@ -284,6 +257,20 @@ function createRecursiveMenu(nodeWrapper, offset, items, depth) {
 				currentLeafNode.icon.image = '/images/icon_expand.png';
 				currentLeafNode.height = 30;
 				currentLeafNode = null;
+			}
+
+			// Open Menu
+			if(node.height == 30 || node.isLeafNode) {
+
+				// Switch Leaf Node Selection
+				if(node.isLeafNode) { currentLeafNode = node; }
+
+				// Select and Open Menu
+				node.name.backgroundColor = '#FFF56C';
+				if(enableItemValue) node.itemValue.backgroundColor = '#FFF56C';
+				node.icon.image = '/images/icon_collapse.png';
+				node.height = Ti.UI.SIZE;
+
 			}
 
 			// Change Current Depth
